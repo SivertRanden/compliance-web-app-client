@@ -1,0 +1,8 @@
+<div>
+  <button (click)="getLaws()">Hent lover</button>
+</div>
+<ul>
+  <li *ngFor="let law of laws">
+    {{ law.title }}
+  </li>
+</ul>
