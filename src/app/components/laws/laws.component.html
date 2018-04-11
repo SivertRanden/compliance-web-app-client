@@ -1,8 +1,29 @@
 <div>
   <button (click)="getLaws()">Hent lover</button>
 </div>
-<ul>
-  <li *ngFor="let law of laws">
-    {{ law.title }}
-  </li>
-</ul>
+<div>
+  <ul>
+    <li *ngFor="let law of laws">
+      {{law.id_law}}: {{ law.title }} - {{law.date_code}}
+    </li>
+  </ul>
+</div>
+
+<div>
+  <input type="text" #idInput>
+  <button (click)="getLaw(idInput.value)">Hent lov med id</button>
+</div>
+<div>
+  <h2> {{ law?.title }}</h2>
+  <ul>Forskrifter
+    <li *ngFor="let p of paragraphs">
+      test
+    </li>
+  </ul>
+  <ul>Paragrafer
+    <li *ngFor="let s of subsections">
+      §{{s.subNumber}} {{s.subTitle}}
+    </li>
+  </ul>
+
+</div>

@@ -1,5 +1,5 @@
 export class Law {
-    id: number;
-    title: string;
-    dateCode: string;
+  id_law: number;
+  title: string;
+  date_code: string;
 }
