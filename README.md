@@ -24,9 +24,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Specific for this project
 
-Components are in the components folder
-Services are in the services folder
-Classes are in the classes folder
+- Components are in the components folder
+- Services are in the services folder
+- Classes are in the classes folder
 
 ### Make a new page: 
 
