@@ -12,9 +12,6 @@ import { NgIf } from "@angular/common";
 })
 export class LawsComponent implements OnInit {
   laws: Law[];
-  law: Law;
-  regulations: Regulation[];
-  subsections: Subsection[];
 
   constructor(private lawsService: LawsService) {}
 

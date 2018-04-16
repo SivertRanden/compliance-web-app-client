@@ -12,12 +12,17 @@ import { LawsService } from "./services/lawservice/laws.service";
 
 import { RouterModule } from "@angular/router";
 import { appRoutes } from "./routerConfig";
-import { LawsDetailsComponent } from './components/laws-details/laws-details.component';
+import { LawsDetailsComponent } from "./components/laws-details/laws-details.component";
+import { ThemesService } from "./services/themeservice/themes.service";
 
 @NgModule({
   declarations: [AppComponent, ThemesComponent, LawsComponent, LawsDetailsComponent],
   imports: [BrowserModule, HttpClientModule, HttpClientXsrfModule, RouterModule.forRoot(appRoutes)],
-  providers: [LawsService, { provide: LocationStrategy, useClass: HashLocationStrategy }],
+  providers: [
+    LawsService,
+    ThemesService,
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
