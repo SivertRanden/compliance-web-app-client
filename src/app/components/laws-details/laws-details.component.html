@@ -1,0 +1,15 @@
+<div>
+  <h2> {{ law?.title }}</h2>
+  <ul>
+    <b>Forskrifter</b>
+    <li *ngFor="let r of regulations">
+      {{r.title}} - {{r.date_code}}
+    </li>
+  </ul>
+  <ul>
+    <b>Paragrafer</b>
+    <li *ngFor="let s of subsections">
+      §{{s.number}} {{s.title}}
+    </li>
+  </ul>
+</div>

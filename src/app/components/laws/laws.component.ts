@@ -15,23 +15,14 @@ export class LawsComponent implements OnInit {
   law: Law;
   regulations: Regulation[];
   subsections: Subsection[];
-  data;
 
   constructor(private lawsService: LawsService) {}
+
+  ngOnInit() {
+    this.getLaws();
+  }
 
   getLaws(): void {
     this.lawsService.getLaws().subscribe(laws => (this.laws = laws));
   }
-
-  getLaw(id): void {
-    this.lawsService.getLaw(id).subscribe(data => {
-      this.law = data[0][0];
-      this.regulations = data[1];
-      this.subsections = data[2];
-    });
-    console.log(this.regulations);
-    console.log(this.subsections);
-  }
-
-  ngOnInit() {}
 }

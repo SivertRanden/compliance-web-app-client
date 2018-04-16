@@ -1,5 +1,5 @@
 export class Regulation {
-  id: number;
+  id_regulation: number;
   title: string;
-  dateCode: string;
+  date_code: string;
 }

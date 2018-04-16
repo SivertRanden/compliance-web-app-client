@@ -1,7 +1,7 @@
 export class Subsection {
-  id: number;
-  subNumber: string;
-  subTitle: string;
-  subType: string;
+  id_sub_section: number;
+  number: string;
+  titleitle: string;
+  type: string;
   comment: string;
 }
