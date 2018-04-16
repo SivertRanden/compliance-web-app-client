@@ -28,7 +28,7 @@ Components are in the components folder
 Services are in the services folder
 Classes are in the classes folder
 
-# Make a new page: 
+### Make a new page: 
 
 Run `ng generate component components/your-new-component`
 This is where the HTML and the logic for the component will be
